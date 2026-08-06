@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">This is survey form</p>
+    </header>
+
+    <form id="survey-form">
+      <fieldset>
+        <label for="name">Name</label>
+        <input placeholder="ucup" required id="name" type="text" />
+
+        <label for="email" id="email-label">Email</label>
+        <input
+          placeholder="contoh@gmail.com"
+          required
+          id="email"
+          type="email"
+          name="email"
+          size="20"
+        />
+
+        <label for="number" id="number-label">Age</label>
+        <input
+          placeholder="3-100"
+          id="number"
+          name="number"
+          type="number"
+          min="3"
+          max="100"
+        />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <label id="name-label">Which Option</label>
+        <select id="dropdown">
+          <option value="student">student</option>
+          <option value="fulltime-job">fulltime job</option>
+          <option value="fulltime-learner">fulltime learner</option>
+        </select>
+        <br />
+        <br />
+
+        <label>Would You Recommend</label> <br />
+        <label>yes</label>
+        <input type="radio" id="yes-option" value="yes" name="recommend" />
+        <label>no</label>
+        <input type="radio" id="no-option" value="no" name="recommend" />
+        <label>maybe</label>
+        <input type="radio" id="maybe-option" value="maybe" name="recommend" />
+        <br />
+        <br />
+
+        <label
+          >What would you like to see improved? (Check all that apply)</label
+        >
+        <br />
+
+        <label>Front-end Projects</label>
+        <input type="checkbox" value="frontend" />
+        <label>Back-end Projects</label>
+        <input type="checkbox" value="backend" />
+        <label>Data Visualization</label>
+        <input type="checkbox" value="datavisual" />
+      </fieldset>
+      <br />
+      <label>Any comments or suggestions?</label> <br />
+      <textarea placeholder="enter your comments here..."></textarea> <br />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
